@@ -1,3 +1,6 @@
+body{
+  background: linear-gradient(to top, white, lightblue);
+}
 
 .random-wrapper{
   vertical-align: middle;
@@ -23,7 +26,7 @@
 }
 
 .random-icon:hover {
-  background-color: lightgrey;
+  background-color: #4286f4;
 }
 
 .search-form {
@@ -95,13 +98,13 @@
 }
 
 .search-wrapper .input-wrapper .search-icon:hover{
-  background-color: lightgrey;
+  background-color: #4286f4;
 }
 
 .search-wrapper.active .input-wrapper .search-icon {
   width: 50px;
   border-radius: 30px;
-  background-color: lightgrey;
+  background-color: #4286f4;
 }
 
 .search-wrapper .input-wrapper .search-icon span {
@@ -151,7 +154,7 @@
 }
 
 .thumbnail:hover{
-  background-color: lightgrey;
+  background-color: #4286f4;
 }
 
 .thumbnail img{
