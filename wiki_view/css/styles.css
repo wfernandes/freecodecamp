@@ -1,0 +1,113 @@
+.search-form {
+  height: 50px;
+  margin: 20px 0px;
+}
+
+.search-wrapper {
+  height: 50px;
+  width: 50px;
+}
+
+.search-wrapper .input-wrapper {
+  height: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-wrapper.active .input-wrapper {
+  width: 400px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+}
+
+.search-wrapper .input-wrapper .search-input {
+  width: 50%;
+  margin: 5px 0px 0px 13px;
+  opacity: 0;
+  display: none;
+  background: transparent;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Open Sans", Arial, Verdana;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFF;
+  transform: translate(0, 60px);
+  transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+  transition-delay: .3s;
+}
+
+.search-wrapper.active .input-wrapper .search-input {
+  opacity: 1;
+  display: inline-block;
+  transform: translate(0, 10px);
+  transition-delay: .3s;
+}
+
+.search-wrapper .input-wrapper .search-icon {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+  background: #FFF;
+  padding: 0px;
+  outline: none;
+  position: relative;
+  z-index: 0;
+  float: right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: red;
+}
+
+.search-wrapper.active .input-wrapper .search-icon {
+  width: 50px;
+  border-radius: 30px;
+}
+
+.search-wrapper .input-wrapper .search-icon span {
+  transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+}
+
+.search-wrapper.active .input-wrapper .search-icon span {
+  transform: rotate(90deg)
+}
+
+.search-wrapper .close-icon {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 25%;
+  padding: 0px;
+  outline: none;
+  visibility: hidden;
+  transform: rotate(-180deg);
+  transition: all .4s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+  transition-delay: 0.1s;
+  cursor: pointer;
+}
+
+.search-wrapper.active .close-icon {
+  visibility: visible;
+  transform: rotate(90deg);
+  transform: translate(420px, 0);
+  transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+  transition-delay: 0.5s;
+}
+
+.glyphicon.glyphicon-remove{
+  font-size: 20px;
+}
+
+.thumbnail{
+  margin: 10px;
+  float: left;
+  width: 200px;
+  cursor: pointer;
+}
+

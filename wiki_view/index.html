@@ -1,0 +1,47 @@
+<head>
+<meta charset="UTF-8">
+<title>CodePen - WikiView</title>
+
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'>
+<link rel='stylesheet' href="css/styles.css">
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='js/custom.js'></script>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <!-- SEARCH -->
+    <div class="col-md-6 col-md-offset-3 ">
+      <div class="search-form">
+        <form class="search-wrapper" onsubmit="submitFn(this, event);">
+          <div class="input-wrapper">
+            <input type="text" class="search-input" placeholder="Type to Search" />
+            <button class="search-icon" onclick="searchToggle(this, event);">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
+              </button>
+          </div>
+          <button class="close-icon" onclick="searchToggle(this, event);">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true" ></span> 
+            </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row results">
+    <!-- RESULTS -->
+  </div>
+  <div id="placeholder" class="thumbnail" style="display:none;">
+    <a href="#">
+      <img src="#">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p id="content">Some content goes here. Some more content.Some content goes here. Some more content</p>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
