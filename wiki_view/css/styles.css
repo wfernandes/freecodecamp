@@ -105,9 +105,28 @@
 }
 
 .thumbnail{
-  margin: 10px;
-  float: left;
-  width: 200px;
+  margin: 0 0 1em;
+  width: 100%;
   cursor: pointer;
+  display: inline-block;
+  transition: background 0.5s linear;
 }
+
+.thumbnail:hover{
+  background-color: lightgrey;
+}
+
+.thumbnail img{
+  margin-top: 4%;
+}
+
+.thumbnail.caption h3{
+  margin-top:1%;
+}
+
+.col{
+  column-count: 4;
+  column-gap: 1em;
+}
+
 

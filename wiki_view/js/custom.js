@@ -70,10 +70,12 @@ function showResults(data) {
     item.attr("id", "result" + i);
     item.find("h3").text(v.title);
     item.find("#content").html(v.body);
-    item.find("img").attr("src", v.img);
     item.find("a").attr("href", v.page);
-    // TODO: Add link to the original article. Wrap the header with link.
-    // TODO: Add img source if available.
+    if(v.img){
+      item.find("img").attr("src", v.img);
+    }else{
+      item.find("img").remove();
+    }
     $(".results").append(item);
   }
   // Once the results are on the DOM, then fade them in.
