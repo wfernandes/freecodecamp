@@ -15,12 +15,15 @@
 <div class="container">
 	<div class="starter-template text-center">
 		<h2>Welcome to Wiki View</h2>
-		<p class="lead">Click on the search icon to begin searching and learning.</p>
+		<p class="lead">Click on the search icon to begin searching 
+      and learning. <br> Or just click on the Random button to get a 
+      random article.
+    </p>
 	</div>
   <div class="row">
     <!-- SEARCH -->
     <div class="col-md-3 random-wrapper">
-      <button class="random-icon">
+      <button class="random-icon" data-toggle="tooltip" title="Random">
         <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
           <span class="glyphicon glyphicon-random"></span>
         </a>
@@ -31,7 +34,7 @@
         <form class="search-wrapper" onsubmit="submitFn(this, event);">
           <div class="input-wrapper">
             <input type="text" class="search-input" placeholder="Type to Search" />
-            <button class="search-icon" onclick="searchToggle(this, event);">
+            <button class="search-icon" data-toggle="tooltip" title="Search" onclick="searchToggle(this, event);">
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
               </button>
           </div>
