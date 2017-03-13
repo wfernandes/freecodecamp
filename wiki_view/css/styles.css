@@ -63,7 +63,7 @@
   float: right;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background-color: red;
+  background-color: darkgrey;
 }
 
 .search-wrapper.active .input-wrapper .search-icon {
