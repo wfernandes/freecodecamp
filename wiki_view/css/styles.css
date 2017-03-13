@@ -1,3 +1,31 @@
+
+.random-wrapper{
+  vertical-align: middle;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.random-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: relative;
+  background-color: darkgrey;
+  transition: all 0.3s linear;
+}
+
+.random-icon a{
+  color: #333;
+  text-decoration: none;
+}
+
+.random-icon:hover {
+  background-color: lightgrey;
+}
+
 .search-form {
   height: 50px;
   margin: 20px 0px;
@@ -66,9 +94,14 @@
   background-color: darkgrey;
 }
 
+.search-wrapper .input-wrapper .search-icon:hover{
+  background-color: lightgrey;
+}
+
 .search-wrapper.active .input-wrapper .search-icon {
   width: 50px;
   border-radius: 30px;
+  background-color: lightgrey;
 }
 
 .search-wrapper .input-wrapper .search-icon span {
