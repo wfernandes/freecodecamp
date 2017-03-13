@@ -24,7 +24,7 @@
 }
 
 .search-wrapper .input-wrapper .search-input {
-  width: 50%;
+  width: 20%;
   margin: 5px 0px 0px 13px;
   opacity: 0;
   display: none;
@@ -43,6 +43,7 @@
 }
 
 .search-wrapper.active .input-wrapper .search-input {
+  width: 80%;
   opacity: 1;
   display: inline-block;
   transform: translate(0, 10px);
