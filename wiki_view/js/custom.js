@@ -1,11 +1,5 @@
-$(document).ready(function() {
-  //$(".thumbnail").hide();
-
-})
-
 function searchToggle(obj, evt) {
   var container = $(obj).closest('.search-wrapper');
-  console.log("is active", container.hasClass('active'))
   if (!container.hasClass('active')) {
     container.addClass('active');
     evt.preventDefault();
@@ -62,6 +56,7 @@ function submitFn(obj, evt) {
 }
 
 function showResults(data) {
+  $('footer').css('position', 'relative');
   var placeholder = $("#placeholder");
 
   for (var i = 0; i < data.length; i++) {
@@ -89,6 +84,7 @@ function showResults(data) {
 function search(searchQuery) {}
 
 function clearResults() {
+  $('footer').css('position', 'absolute');
   $('.results').find('.thumbnail').each(
     function(idx) {
       $(this).delay(50 * idx).fadeOut(100);
