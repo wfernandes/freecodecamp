@@ -2,6 +2,10 @@ body{
   background: linear-gradient(to top, white, lightblue);
 }
 
+.icon-sm{
+  font-size: 15px;
+}
+
 .random-wrapper{
   vertical-align: middle;
   margin: 20px 0;
