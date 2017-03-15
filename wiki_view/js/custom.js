@@ -56,7 +56,6 @@ function submitFn(obj, evt) {
 }
 
 function showResults(data) {
-  $('footer').css('position', 'relative');
   var placeholder = $("#placeholder");
 
   for (var i = 0; i < data.length; i++) {
@@ -79,16 +78,16 @@ function showResults(data) {
       $(this).delay(100 * idx).fadeIn(100);
     }
   );
+  $('footer').css('position', 'relative');
 }
 
 function search(searchQuery) {}
 
 function clearResults() {
-  $('footer').css('position', 'absolute');
   $('.results').find('.thumbnail').each(
     function(idx) {
       $(this).delay(50 * idx).fadeOut(100);
     }
   );
-
+  $('footer').css('position', 'absolute');
 }
